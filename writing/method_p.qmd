@@ -1,0 +1,19 @@
+---
+bibliography: references.bib
+---
+
+# 1. Methods
+
+## 1.1. Data Source and Recording Details
+
+### 1.1.1. International Brain Laboratory (IBL)
+
+We used the open-access dataset from the International Brain Laboratory (IBL), which includes electrophysiology recordings of mice performing a perceptual decision-making task using Neuropixel probes. *Should I then say it is data from X mice, Y probes, recorded in different labs ...?*
+
+### 1.1.2. Task Details
+
+At the start of each trial, the mouse was required to refrain from moving the wheel for a quiescence period lasting between 400 and 700 milliseconds. After this period, a visual stimulus (Gabor patch) appeared on either the left or right side of the screen, accompanied by a 100-millisecond tone (5 kHz sine wave). The contrast of the stimulus was randomly chosen from five levels (100%, 25%, 12.5%, 6%, and 0%). If the mouse correctly moved the stimulus to the center (±35° azimuth), it received a 3 µL water reward. Incorrect responses or failing to respond within 60 seconds resulted in a 500-millisecond burst of white noise and a timeout. The experiment began with 90 unbiased trials where the stimulus appeared equally on both sides. The contrast levels were presented in a ratio of \[2:2:2:2:1\] for contrasts \[100%, 25%, 12.5%, 6%, 0%\]. After this initial block, trials were organized into biased blocks, where the likelihood of the stimulus appearing on one side was fixed at 20% for the left and 80% for the right in "right blocks," or vice versa in "left blocks." These blocks consisted of 20 to 100 trials, determined by a truncated geometric distribution, with stimulus contrast levels similar to those in the unbiased block. In 0% contrast trials, where no stimulus was visible, the side assignment followed the bias of the block (e.g., right side for right blocks) [@benson2023]. *Should I talk about the minimum and/or average trials per session?*
+
+### 1.1.3. Electrophysiological Recording
+
+The neural recordings were conducted using Neuropixels 1.0 (3A or 3B) probes, with 384 recording channels and 960 low-impedance sites on a single shank, with one or two probes for each session [@benson2023]. Neuropixels probes are advanced silicon-based neural recording devices designed for high-density recording of neural activity across large populations of neurons with precise spatial and temporal resolution [@jun2017]. *Should I then say 3B is an improved version of 3A with better saturation limits, or should I say these probes are initially for detecting spiking ...?* After the recordings, electrode tracks were reconstructed by performing serial-section 2-photon microscopy. A region was then assigned to each recording site within the Allen Common Coordinate Framework [@benson2023].
