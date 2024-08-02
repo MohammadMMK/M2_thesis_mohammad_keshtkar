@@ -1,0 +1,28 @@
+# why studying the LFP in a perceptual decision making task?
+
+based on this paper : [@krishna2021]
+
+"*Several properties of LFPs suggest that they might be useful for studying perceptual decision making*."
+
+**"*First****, in sensory areas, LFPs are tuned for the attributes of a sensory stimulus in a manner consistent with the selectivity of local spiking activity. This tuning suggests that LFPs are a useful proxy for local neuronal activity. "* this means that same as local spiking activity , LFP dynamics can show different aspect of visual stimuli for example the color, shape, place in the visual field
+
+"***Second**, LFPs can capture weak, broadly shared signals which are difficult to detect in spiking activity (e.g., gamma-modulation of spiking activity; Fries 2009; Jia and Kohn 2011; Jia et al. 2013; Ray and Maunsell 2015). This sensitivity may be important because neural correlates of perceptual decisions in sensory cortex may involve weak but broadly shared “top-down”\
+signals related to expectation (Goris et al. 2017), belief about task structure (Haefner et al. 2016; Bondy et al. 2018), or feedback from decision areas* "
+
+"***Finally**, different frequency bands of the LFP have been proposed to indicate signal flow across stages of the visual system. Specifically, gamma fluctuations have been associated with feedforward signaling (Fries 2009), whereas either alpha (5–15 Hz; van Kerkoerle et al. 2014; Michalareas et al. 2016) or beta (14–18 Hz; Bastos et al. 2015) fluctuations have been associated with feedback. Assessing decision information in different frequency bands of the LFP provides a way to assess these proposals and, if supported, to infer how decision information might be routed across stages of a sensory system*"
+
+considering these properties of LFP, [@krishna2021] conducted an analysis of local field potentials (LFPs) recorded using two 48-electrode arrays implanted in the primary visual cortex (V1) and area V4 of macaque monkeys trained to perform a fine orientation discrimination task. The analysis revealed significant choice-related information in the low (0–30 Hz) and high (70–500 Hz) frequency components of the LFP, with minimal information in the gamma frequencies (30–70 Hz). **The choice information was more robust in V4 than in V1 and stronger in LFPs compared to simultaneously measured spiking activity.** Additionally, the LFP-based choice information included a global component that was common across electrodes within an area. These findings indicate the presence of robust choice-related signals in the LFPs recorded in V1 and V4, suggesting that LFPs can be a valuable complement to spike-based analyses of decision making.
+
+# what is the downside of using LFP?
+
+based on [@krishna2021] , the extensive spatial integration of LFPs could make them ineffectual for investigating the encoding of decision signals in the sensory cortex. LFPs have demonstrated the capacity to mirror neuronal activity spanning from several hundred microns (Katzner et al. 2009 " 95% of the LFP signal originates within 250 microm of the recording electrode"; Xing et al. 2009; Dubey and Ray 2016) to distances of many millimeters from the electrode (Kreiman et al. 2006; Jia et al. 2011; Kajikawa and Schroeder 2011). as perceptual decisions are believed to encompass precise and *often opposite weighting of neuronal responses, based on their task-relevance (e.g., tuning curve slope for the task stimuli; Pitkow et al. 2015),* LFP data might be extensively coarse to have practical
+
+I think one important method to mitigate this problem is by doing current source density (CSD)
+
+# comparing LFP, CSD, and nfLFP:
+
+[@tovar2023] quantified how much information is masked by volume conduction while comparing raw LFP , CSD and nfLFP. they found that features that are primarily processed within V1 like orientation and ocular dominance( left Vs right) are hidden by volume conduction while stimulus features such as stimulus sequences related to areas outside V1 ( higher order visual areas) appear stronger by volume conduction. "*At the same time, we found that local population spiking can be less informative than near-field signals, suggesting that certain stimulus-relevant information remains subthreshold, but can be recovered by decoding near field LFP instead of spiking. Additionally, we found that volume conduction differentially affected information content across LFP frequency bands associated with feedforward versus feedback processing. Our findings demonstrate that volume conducted signals frequently mask information in locally generated low-frequency signals. Thus, computational elimination of volume-conducted contributions transforms LFP into the most informative neural readout within cortical microcircuitry, largely exceeding the informative value of population spiking responses*"
+
+# feedforward and feedback processing in visual cortex and the role of oscillation:
+
+*" Here,we show that simple visual stimuli reliably evoke two traveling waves with spatial wavelengths that cover much of the cerebral hemisphere in awakemice. 30-50 Hz feedforward waves arise in primary visual cortex (V1) and propagate rostrally, while 3-6 Hz feedback waves originate in the association cortex and flow caudally. The phase of the feedback wave modulates the amplitude of the feedforward wave and synchronizes firing between V1 and parietal cortex. Altogether, these results provide direct experimental evidence that visual evoked traveling waves percolate through the cerebral cortex and coordinate neuronal activity across broadly distributed networks mediating visual processing."* [@aggarwal2022]
