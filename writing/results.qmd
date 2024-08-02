@@ -1,0 +1,24 @@
+---
+title: "Thesis Results"
+format: pdf
+execute:
+  python: "C:/Users/gmoha/anaconda3/envs/writingEnv/python.exe"
+---
+
+
+```{python}
+import pandas as pd
+
+# Read the CSV file
+data = pd.read_csv('..\Results\clean_data.csv')
+
+accuracy_value = data.loc[4, 'pid']
+
+# Display the value
+accuracy_value
+```
+
+```{markdown}
+
+The accuracy value from the 5th row is `{{ accuracy_value }}`.
+```
